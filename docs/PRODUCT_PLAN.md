@@ -1,6 +1,6 @@
 # Clearpath 2.0 — Product and Implementation Plan
 
-**Status:** Approved direction for planning; no production migration or replacement has occurred.
+**Status:** Draft for review; no production migration or replacement has occurred.
 **Product:** Private, ADHD-friendly personal operating system for work, university and personal life.
 **Source repository:** `jibrilmohamod/cloudinaryDemo`
 **Target deployment:** Netlify (verify Git integration and live deployment before changing production).
