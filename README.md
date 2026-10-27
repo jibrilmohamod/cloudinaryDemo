@@ -1,75 +1,30 @@
-# Nuxt 3 Minimal Starter
+# Clearpath ADHD Workspace
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A mobile-friendly, low-friction personal task and focus system, replacing an old Cloudinary demo repository.
 
-## Setup
+## Hosted version
 
-Make sure to install the dependencies:
+Static site designed for GitHub Pages, using the repository root as publishing source.
 
-```bash
-# npm
-npm install
+### Features
 
-# pnpm
-pnpm install
+- Capture tasks quickly (Ctrl/Cmd + K).
+- Today, Inbox, Tasks, Projects, Notes and Focus views.
+- Top three tasks, priority flags and overdue indicators.
+- Assign tasks to projects, record notes, mark tasks done.
+- 25-minute focus timer and completed-session log.
+- Import and export JSON backups.
 
-# yarn
-yarn install
+### Data and privacy
 
-# bun
-bun install
-```
+**This release is browser-local.** Records are stored in `localStorage` on the current browser/device, not on GitHub or the server. A browser reset or changing devices can lose access to data. Use **Export backup** regularly. No account sign-in, cloud sync, MCP endpoint, or AI assistant is enabled in this hosted release. Do not rely on it for confidential client work or as a sole archive.
 
-## Development Server
+### GitHub Pages deployment
 
-Start the development server on `http://localhost:3000`:
+In **Settings > Pages**, set **Deploy from a branch**, choose `master` and `/(root)`. The site will be hosted at `https://jibrilmohamod.github.io/cloudinaryDemo/`.
 
-```bash
-# npm
-npm run dev
+Once GitHub Pages is enabled, changes pushed to `master` publish automatically. The former demo is preserved on branch `archive/cloudinary-demo-2023`.
 
-# pnpm
-pnpm run dev
+### Next milestone
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Migrate to Supabase Auth/Postgres with RLS, add an authenticated OpenAI API assistant and per-user OAuth-protected MCP server, then migrate selected Notion databases and add email/calendar integration. Those are not enabled in this static preview.
